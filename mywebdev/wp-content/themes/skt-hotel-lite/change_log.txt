@@ -1,0 +1,35 @@
+Version 1.0
+i) Intial version Release
+
+Version 1.1
+i)    Solved Main Navigation Overlaping Issue.
+ii)	  Solved Sticky Post Issue.	
+iii)  Solved Author Comment Style Issue. 
+
+Version 1.2
+i)    Resolved Long Title And Description In Logo.
+
+Version 1.3
+i)    Changed appearance in latest posts of the theme.
+ii)   Resolved inner page logo issue.
+iii)  Change screen shots image.
+
+Version 1.4
+i)    Design of sidebar standard widgets like search, calender and others rectified.
+
+Version 1.5
+i)    Solved responsive issue.
+
+Version 1.6
+i)    Image Dimenssions explained within customizer.
+
+Version 1.7
+i)    All instances of __()/_e() change with esc_html__()/esc_html_e() esc_attr__()/esc_attr_e()
+ii)   Resolved WooCommerce Issue
+iii)  Solved Front page displays issues and also remove dummy content when is set to Your latest posts. 
+iv)   Add Logo Uploaded Option Under Customizer Site Identity.
+v)    Set Upsell single link in customizer.
+vi)   Removed from customizer panels that do not actually provide any thing to the user.
+vii)  Change screenshot.png
+viii) Add about theme under Appearance.
+ix)   Resolved Page Content Line Height Issue.

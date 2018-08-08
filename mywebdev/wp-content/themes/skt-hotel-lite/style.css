@@ -1,0 +1,234 @@
+/*
+Theme Name: SKT Hotel Lite
+Theme URI: https://www.sktthemes.net/shop/hotel-lite/
+Author: SKT Themes
+Author URI: http://www.sktthemes.net
+Description: SKT  Hotel is a hotel WordPress theme which is responsive. It caters to hotel, hospitality business, restaurant, eatery, cuisine, recipe, cafe, lodge, food joint and others. It is mobile friendly and has a very nice animated homepage. It can be easily set up using Customizer API. Demo Link: http://sktthemesdemo.net/hotel/
+
+Version: 1.7
+License: GNU General Public License
+License URI: license.txt
+Text Domain: skt-hotel-lite
+Tags: one-column,two-columns,right-sidebar,custom-background,custom-colors,custom-menu,sticky-post,theme-options,threaded-comments
+
+SKT Hotel WordPress Theme has been created by SKT Themes(sktthemes.net), 2017.
+SKT Hotel WordPress Theme is released under the terms of GNU GPL
+*/
+body{ margin:0; padding:0;line-height:20px; font-size:13px; color:#5d5c5c; font-family:Arial, Helvetica, sans-serif;}
+*{ margin:0; padding:0; outline:none;}
+img{ border:none; margin:0; padding:0; height:auto}
+.wp-caption, .wp-caption-text, .sticky, .gallery-caption, .aligncenter{ margin:0; padding:0;}
+p{ margin:0; padding:0;}
+a{ text-decoration:none; color:#02aee7;}
+a:hover{ color:#ff6565;}
+ol,ul{ margin:0; padding:0;}
+ul li ul, ul li ul li ul, ol li ol, ol li ol li ol{ margin-left:10px;}
+h1,h2,h3,h4,h5,h6{ color:#484f5e; font-family:'Roboto', sans-serif; margin:0 0 20px; padding:0; line-height:1.1; font-weight:300; }
+h1{ font-size:36px;}
+h2{ font-size:30px;}
+h3{ font-size:24px;}
+h4{ font-size:20px;}
+h5{ font-size:18px;}
+h6{ font-size:14px;}
+.clear{ clear:both;}
+.alignnone{ width:100% !important;}
+img.alignleft, .alignleft{ float:left; margin:0 15px 0 0; padding:5px; border:1px solid #cccccc;}
+img.alignright, .alignright{ float:right; margin:0 0 0 15px; padding:5px; border:1px solid #cccccc;}
+.left{ float:left;}
+.right{ float:right;}
+.space30{ clear:both; height:30px;}
+.pagination{display:table; clear:both;}
+.pagination ul{list-style:none; margin:20px 0;}
+.pagination ul li{display:inline; float:left; margin-right:5px;}
+.pagination ul li span, .pagination ul li a, .nav-links a{background:#646262; color:#fff; padding:5px 10px; display:inline-block;}
+.pagination ul li .current, .pagination ul li a:hover, .current{background:#34c6f6; padding:5px 10px; display:inline-block;}
+
+#comment-nav-above .nav-previous, #comment-nav-below .nav-previous{ float:none !important; margin:10px 0;}
+ol.comment-list li{ list-style:none; margin-bottom:5px;}
+
+.header .header-inner .logo{float:left; z-index:999999; background-color:#02aee6; padding:15px 15px 35px; border:1px solid #03cbe9; color:#fff; -webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-bottomright: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px; width:auto; position:absolute;}
+.header .header-inner{ margin:0 auto; padding:0; position:relative; width:1100px;}
+.header .header-inner .logo h1{font-weight:400; margin:0px; line-height:36px; color:#fff; word-wrap:break-word;}
+.header span.tagline{ font-size:13px;}
+.header .header-inner .logo a{ color:#fff;}
+.header .header-inner .logo img{ height:55px; width:auto;}
+.container{ width:1100px; margin:0 auto; position:relative;}
+
+.bookbtn{ background-color: #02aee7; border: 1px solid #03cbe9; color: #ffffff; font:200 28px/28px 'Roboto',san-serif;  position:absolute; padding:10px 30px; display:inline-block; top:-50px; z-index:999; text-transform:uppercase; border-bottom:none !important; -webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px; cursor:pointer;   }
+.bookbtn span{ margin-left:15px;}
+
+/*header menu css*/
+.toggle{display: block; position:relative; z-index:99999;}
+.toggle a{width:100%; color:#ffffff; background:url(images/mobile_nav_right.png) no-repeat right center #3e3e3e; padding:10px 10px; margin-top:5px; font-size:16px;}
+.toggle a:hover{color:#ffffff !important;}
+.nav{display:none;}
+
+.header{width:100%; z-index:999999; background-color:#1f1f1f;}
+.header .header-inner .nav{ padding:0; text-align:right; float:right;}
+.header .header-inner .nav ul { float:right; margin:0; padding:0; font-family:'Roboto Condensed', sans-serif; font-weight:400; font-size:15px;}
+.header .header-inner .nav ul li{ display:inline-block; margin:0; position:relative; text-align:center;}
+.header .header-inner .nav ul li a{ padding:33px 13px; display:block; color:#fff; text-transform:uppercase; }
+.header .header-inner .nav ul li ul li{display:block; position:relative; float:none; top:-1px;}
+.header .header-inner .nav ul li ul li a{display:block; padding-top:10px; padding-bottom:10px; position:relative; top:1px; text-align:left; border-top:1px solid #fff;}
+.header .header-inner .nav ul li a:hover, .header .header-inner .nav ul li.current_page_item a{color:#34c6f6; }
+
+.header .header-inner .nav ul li ul{display:none; z-index:9999999; position:relative;}
+.header .header-inner .nav ul li:hover > ul{display:block; width:200px; position:absolute; left:0; text-align:left; background-color:#1f1f1f; box-shadow:0 2px 2px #333;}
+.header .header-inner .nav ul li:hover ul li ul{display:none; position:relative;}
+.header .header-inner .nav ul li:hover ul li:hover > ul{display:block; position:absolute; left:200px; top:1px;}
+.header .header-inner .nav ul li:last-child a{ padding-right:0;}
+
+/* = header top sign in  css
+-------------------------------------------------------------- */
+section#home_slider{ padding:0;}
+#FrontBlogPost, #wrapsecond{ padding:50px 0;}
+h2.section-title {color:#454545; font:300 36px/40px 'Roboto',san-serif; text-align: center; text-transform:uppercase;}
+
+
+/* = Services section css
+-------------------------------------------------------------- */
+#wrapsecond{ background-color:#f9f9f9; text-align:center; }
+.services-wrap .one_third{ text-align:center; width:31%; margin:0 3.5% 0 0; float:left;}
+.services-wrap .one_third img{ width:100%;}
+.services-wrap .one_third h4{font:400 22px/22px 'Roboto',san-serif;  padding:20px 0; margin:0; text-transform:uppercase;}
+.services-wrap .one_third h4:hover{color:#02aee7;}
+.last_column{clear:right; margin-right:0 !important; }
+/* = social icons css
+-------------------------------------------------------------- */
+.social-icons a{ background-color:#545556; width:45px; height:45px; line-height:45px; border-radius:50%; text-align:center;  vertical-align:middle; display:inline-block; transition:0.6s; -moz-transition:0.6s; -webkit-transition:0.6s; -o-transition:0.6s; font-size:20px;  color:#fff; margin:0 3px; padding:0; }
+.social-icons br{ display:none;}
+.social-icons a:hover{ background-color:#02aee7;}
+
+/* = Page lay out css
+-------------------------------------------------------------- */
+.site-main{ width:740px; margin:0; padding:0; float:left;}
+#sitefull{ width:100%; float:none;}
+#sitefull p{ margin-bottom:15px;}
+.page_content{ padding:50px 0;}
+.page_content p{ margin-bottom:20px; line-height:20px;}
+
+.blog_lists{ margin-bottom:30px; }
+.blog_lists h2{ margin-bottom:10px;}
+.blog_lists h2 a{ color:#484f5e;}
+.blog_lists h2 a:hover{ color:#34c6f6;}
+.blog_lists p{ margin-bottom:10px;}
+.blog-meta{ font-style:italic; margin-bottom:8px;}
+.post-date, .post-comment, .post-categories{ display:inline; color:#000000;} 
+.single_title{ margin-bottom:5px;}
+.BlogPosts{ width:31.2%; float:left; margin:0 3% 0 0; text-align:center; min-height:500px;}
+.BlogPosts img{ width:100%;}
+.BlogPosts h2{ margin:10px 0; font-size:20px;}
+.MoreLink{ color:#5d5c5c ;display: inline-block; border:1px solid #5d5c5c; padding:5px 10px;}
+.MoreLink:hover{ color:#02aee7; border-color: #02aee7;}
+
+/* = sidebar
+-------------------------------------------------------------- */
+#sidebar{ width:330px; float:right;}
+aside.widget{margin-bottom:30px; background-color:#f9f9f9; padding:20px;}
+aside.widget ul{ list-style:disc; }
+h3.widget-title{ background-color:#909090; padding:12px 15px; margin-bottom:1px; color:#fff;}
+/* Change For Widget */
+#sidebar ul li{ list-style:none; border-bottom:1px dashed #d0cfcf;}
+#sidebar ul li a{ font:300 15px/18px "Roboto",sans-serif; background:url(images/sidebar-arrow.png) no-repeat 0 14px; padding:10px 0 10px 20px; color:#3b3b3b; display: inline-block; }
+/* Change For Widget */
+#sidebar ul li a:hover{ color:#34c6f6;}
+#sidebar ul li:last-child a{ border:none;}
+/* = Footer css
+-------------------------------------------------------------- */
+#footer-wrapper{ background-color:#1f1f1f; position:relative; padding:45px 0 0; color:#fff;}
+.cols-4{width:22%; float:left; margin:0 6% 2% 0; }
+.widget-column-1 { width:15%;}
+.widget-column-4 { margin-right:0px !important;}
+.cols-4 h5{ font-weight:300; font-size:22px; color:#fff; margin-bottom:25px; padding-bottom:15px; text-transform:uppercase;  border-bottom: 1px solid #101010; box-shadow: 0 1px 0 #2e2e2e; }
+.cols-4 ul{ margin:0; padding:0; list-style:inside disc;}
+.cols-4 ul li { display:block; padding:0;}
+.cols-4 ul li a { color:#fff; font:normal 12px/24px Arial, Helvetica, sans-serif; background:url(images/list-arrow.png) no-repeat 0 2px; padding:0 0 0 20px;}
+.cols-4 ul li a:hover, .cols-4 ul li.current_page_item a { color:#dd5145; }
+
+.cols-4 a.readmore span{ color:#fff;}
+.cols-4 p{ margin-bottom:15px;}
+.cols-4 h1, .cols-4 h2, .cols-4 h3, .cols-4 h4, .cols-4 h5, .cols-4 h6{color:#fff;}
+.phone-no{ margin:10px 0 20px; line-height:22px;}
+.phone-no a{color:#d6d6d6;}
+.phone-no a:hover{color:#d6d6d6;}
+.phone-no strong { display:inline-block;}
+.cols-4 .phone-no p{ margin-bottom:0;}
+
+.copyright-wrapper { background-color:#000; position:relative; padding:15px 0;}
+.copyright-txt { float:left;}
+.design-by { float:right;}
+.recent-post{ min-height:70px; margin:0 0 20px 0;}
+.recent-post img{ float:left; width:60px; margin:3px 10px 5px 0;}
+.recent-post h6{ font-size:15px; color:#fff; margin:0 0 5px; font-weight:600;}
+.recent-post h6:hover{color:#34c6f6;}
+.recent-post:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0;}
+
+/* Buttons */
+.button{ background-color:#ff6565; border-bottom:4px solid #e44545; color:#fff; padding:8px 20px; display:inline-block; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; -o-border-radius:2px; -ms-border-radius:2px; }
+.button:hover{background-color:#34c6f6; border-color:#1898c2; color:#fff;}
+
+/* woocommerce CSS
+================================================*/
+a.added_to_cart{background:#e1472f; padding:5px; display:inline-block; color:#fff; line-height:1;}
+a.added_to_cart:hover{background:#000000;}
+a.button.added:before{content:'' !important;}
+#bbpress-forums ul li{padding:0;}
+#subscription-toggle a.subscription-toggle{padding:5px 10px; display:inline-block; color:#e1472f; margin-top:4px;}
+textarea.wp-editor-area{border:1px #ccc solid;}
+.woocommerce input[type=text], .woocommerce textarea{border:1px #ccc solid; padding:4px;}
+form.woocommerce-ordering select{ padding:5px; color:#777777;}
+.woocommerce table.shop_table th, .woocommerce-page table.shop_table th{ font-family:'Roboto',san-serif; color:#ff8a00;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{ color:inherit !important;}
+h1.product_title, p.price{ margin-bottom:10px;}
+.woocommerce table.shop_table th, .woocommerce-page table.shop_table th{ font-family:'Roboto',san-serif; color:#ff6d84;}
+.woocommerce ul.products li, #payment ul.payment_methods li{ list-style:none !important;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{ color:inherit !important;}
+.woocommerce table.shop_table th, .woocommerce table.shop_table td{ border-bottom:0px !important}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {clip: rect(1px, 1px, 1px, 1px);position: absolute !important;	height: 1px;width: 1px;	overflow: hidden;}
+.screen-reader-text:focus {	background-color: #f1f1f1;	border-radius: 3px;	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);	clip: auto !important;	color: #21759b;	display: block;
+	font-size: 14px;font-size: 0.875rem;font-weight: bold;	height: auto;left: 5px;	line-height: normal;padding: 15px 23px 14px;text-decoration: none;	top: 5px;	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+/* ============= Contact Page =========== */
+.wpcf7{ margin:30px 0 0; padding:0;}
+.wpcf7 input[type="text"], .wpcf7 input[type="tel"], .wpcf7 input[type="email"]{ width:40%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:35px; padding:0 15px; color:#797979; margin-bottom:0;}
+.wpcf7 textarea{width:60%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:150px; color:#797979; margin-bottom:25px; font:12px arial; padding:10px; padding-right:0;}
+.wpcf7 input[type="submit"]{background-color:#02aee7; width:auto; border:none; cursor:pointer; text-transform:uppercase; font:18px 'Roboto',san-serif; color:#ffffff; padding:10px 40px; border-radius:3px;}	
+
+/* ============= Comment Form ============ */
+h1.screen-reader-text{font:22px 'Roboto',san-serif;}
+.site-nav-previous, .nav-previous{ float:left;}
+.site-nav-next, .nav-next{ float:right;}
+h3#reply-title{font:300 18px 'Roboto',san-serif;}
+#comments{ margin:30px 0 0; padding:0;}
+nav#nav-below{ margin-top:15px;}
+
+ol.comment-list li{margin-bottom:15px;}
+ol.comment-list li.bypostauthor{ border:1px dashed #02aee6; padding:8px 0 5px 8px;}
+
+/* Change Css */
+#sidebar input[type="text"], #sidebar input[type="search"]{width:80% !important; height:23px; text-align:left; color:#000000; padding-left:5px;}
+#sidebar select{width:100% !important; height:23px;}
+#sidebar table{ width:100%; text-align:center;}
+#prev{text-align:left;}
+#next{text-align:right;}
+.recentcomments a{ background-image:none !important; font-weight:400 !important;}
+li.recentcomments{line-height:36px;}
+#sidebar h3 a{color:#FFF !important;}
+.tagcloud a{word-wrap:break-word;}
+/* Change Css */
+
+body.wp-custom-logo .logo h1{display:none; visibility:hidden;}
+.padtop{padding-top:30px;}
